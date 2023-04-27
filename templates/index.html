@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/logos/logo.png' %}">
+    <title>YOGASALA</title>
+
+    <style>
+        .nav{
+            width: 100%;
+            height: 50px;
+           /* background-color: aqua; */
+            display: flex;
+            box-shadow: 10px 0px 10px 5px lightgray;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+          
+        }
+        .p{
+           /* background-color: yellow;*/
+            display: inline;
+
+        }
+        .Tittle{
+            /*width: 25%;*/
+            width: max-content;
+            padding-left: 35px;
+            /*background-color: green;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .search{
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .menu{
+            width: 60%;
+            /* background-color: yellow; */
+            display: flex;
+            list-style: none;   
+            justify-content: end;
+        }
+        li{
+            padding: 0px 60px;
+        }
+        .search_input{
+            width: 75%;
+            border-radius: 20px;
+            height: 25px;
+            padding: 0px 15px;
+            border: 1px solid gray;
+
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <h6>YOGASALA</h6>
+        <p class="p">home</p>
+        <p class="p">home vara edited direct commit version 6 branch1</p>
+        <p>home</p>
+        <p>home</p>
+    </nav> -->
+    <nav class="nav">
+        <div class="Tittle">
+            <img src="{% static 'images/logos/logo.png' %}" width="40px" style="margin: 10px;">
+            <h2>YOGASALA</h2>
+        </div>
+        <div class="search">
+            <input type="text" class="search_input" placeholder="Search here">
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
